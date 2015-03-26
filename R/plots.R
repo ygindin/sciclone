@@ -848,7 +848,9 @@ compute.binomial.error.bars <- function(successes, total.trials){
 ##---------------------------------------------------------------------------------
 ## Create two dimensional plot with scatter annotated with clustering result
 ##
-sc.plot2d <- function(sco, outputFile=NULL, positionsToHighlight=NULL, highlightsHaveNames=FALSE, overlayClusters=TRUE, overlayErrorBars=FALSE, ellipse.metadata = list(), singlePage=FALSE, scale=1, xlim=100, ylim=100, plot.title=NULL, samplesToPlot=NULL){
+sc.plot2d <- function(sco, outputFile=NULL, positionsToHighlight=NULL, highlightsHaveNames=FALSE, 
+                      overlayClusters=TRUE, overlayErrorBars=FALSE, ellipse.metadata = list(), 
+                      singlePage=FALSE, scale=1, xlim=100, ylim=100, width=7.2, height=6,plot.title=NULL, samplesToPlot=NULL){
 
   vafs.merged = sco@vafs.merged
   sampleNames = sco@sampleNames
