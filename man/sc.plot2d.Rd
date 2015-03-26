@@ -6,7 +6,7 @@
 \description{
   Creates a pdf with one plot for each pair of samples.
 }
-\usage{sc.plot2d(sco, outputFile, positionsToHighlight=NULL,
+\usage{sc.plot2d(sco, outputFile, positionsToHighlight=NULL, width=7.2, height=6,
                  highlightsHaveNames=FALSE, overlayClusters=TRUE,
                  overlayErrorBars=FALSE, ellipse.metadata = list(),
                  singlePage=FALSE, scale=1)
@@ -31,6 +31,12 @@
     a list of positions in 2-column format 1) chromosome 2) position.
     These points will be highlighted on the output scatterplot by using
     a different character than that used for other data points
+  }
+  \item{height}{
+    height (in inches) of the plot output file
+  }
+  \item{width}{
+    width (in inches) of the plot output file
   }
   \item{highlightsHaveNames}{
     boolean argument - if (TRUE), the tool will look for a third column

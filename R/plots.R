@@ -861,12 +861,12 @@ sc.plot2d <- function(sco, outputFile=NULL, positionsToHighlight=NULL, highlight
     nrow=round(sqrt(nplots))
     ncol=ceiling(sqrt(nplots))
     if(!is.null(outputFile)){
-        pdf(outputFile, width=7.2*ncol, height=6*nrow, bg="white")
+        pdf(outputFile, width=width*ncol, height=height*nrow, bg="white")
     }
     par(mfrow=c(nrow,ncol), mar=c(5.1, 5.1, 4.1, 2.1))
   } else {
     if(!is.null(outputFile)){
-      pdf(outputFile, width=7.2, height=6, bg="white")
+      pdf(outputFile, width=width, height=height, bg="white")
     }
   }
 
